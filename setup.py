@@ -2,15 +2,15 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.2'
-DESCRIPTION = 'Software OFDM Modulator'
+VERSION = '0.0.1'
+DESCRIPTION = 'Tools to help interface Python with Latex'
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 # Setting up
 setup(
-    name="SDPA-OFDM",
+    name="SD-Pytex-Tools",
     version=VERSION,
     author="Sebastien Deriaz",
     author_email="sebastien.deriaz1@gmail.com",
@@ -18,8 +18,8 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['numpy'],
-    keywords=['python', 'ofdm', 'modulation', 'modulator', 'sdr'],
+    install_requires=[],
+    keywords=['python', 'latex', 'variables'],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Education",
