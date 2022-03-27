@@ -27,7 +27,7 @@ class var_saver():
     
     def _store_variable(self, variables):
         """
-        Stores the variables on the dictionnary "variable" to the file. Replaces if necessary        
+        Stores the variables on the dictionnary "variable" to the file. Replaces if necessary
         """
         # If the file doesn't exist, create it
         if not os.path.exists(self._file_path) :
@@ -53,12 +53,6 @@ class var_saver():
         with open(self._file_path, 'w') as f:
             f.write(content)
 
-    
-    
-        
-
-
-
     def save(self, *args):
         # https://stackoverflow.com/a/2749857/8418125
         # Extracts arguments names and their values
@@ -76,9 +70,3 @@ class var_saver():
                 variables[i] = value
 
         self._store_variable(variables)
-        
-
-        
-
-
-    #def save_as(self, variable, name):
