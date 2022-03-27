@@ -31,7 +31,7 @@ class var_saver():
         """
         # If the file doesn't exist, create it
         if not os.path.exists(self._file_path) :
-            with open(self._file_path, 'w'):
+            with open(self._file_path, 'w') as f:
                 f.write('')
         
         with open(self._file_path, 'r') as f:
